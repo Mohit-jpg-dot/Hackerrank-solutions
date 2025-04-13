@@ -1,0 +1,40 @@
+# Problem: Bitwise Operators
+# Date: 2025-04-13
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+//Complete the following function.
+
+
+void calculate_the_maximum(int n, int k) {
+    int mxand = 0,mxor = 0,mxxor = 0;
+    for (int i=1;i <=k ;i++ ) {
+        for (int j = i+1; j <= n;j++ ) {
+            int a = i&j;
+            int b = i|j;
+            int c = i^j;
+            if (a < k && a > mxand) mxand = a;
+            if (b < k && b > mxor) mxor = b;
+            if (c < k && c > mxxor) mxxor = c;
+        
+        }
+        
+    
+    }
+    printf("%d\n", mxand);
+    printf("%d\n", mxor);
+    printf("%d\n", mxxor);
+    
+  
+}
+
+int main() {
+    int n, k;
+  
+    scanf("%d %d", &n, &k);
+    calculate_the_maximum(n, k);
+ 
+    return 0;
+}
