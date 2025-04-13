@@ -1,0 +1,20 @@
+# Problem: Sum of Digits of a Five Digit Number
+# Date: 2025-04-13
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	
+    int n,b,count=0;
+    scanf("%d", &n);
+    for(int i = 0;i<5;i++){
+        b = n%10;
+        n = n/10;
+        count+=b;
+    }
+    printf("%d",count);
+    return 0;
+}
