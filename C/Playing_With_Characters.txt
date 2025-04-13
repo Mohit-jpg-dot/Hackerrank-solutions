@@ -1,0 +1,19 @@
+# Problem: Playing With Characters
+# Date: 2025-04-13
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char a,b[100],c[100];
+    scanf("%c %s",&a,&b);
+    getchar();
+    fgets(c,100,stdin);
+    printf("%c\n",a);
+    printf("%s\n",b);
+    printf("%s",c);
+    return 0;
+}
