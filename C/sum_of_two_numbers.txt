@@ -1,0 +1,9 @@
+# Problem: sum of two numbers
+# Date: 2025-04-15
+
+ #include<stdio.h>
+    int main(){
+        char str[6] = {'H','e','l','l','o','\0'};
+        printf("str : %s\n",str);
+        return 0;
+    }
